@@ -82,7 +82,7 @@ def equal_password(verify_password, password):
     else: 
         return False
 
-EMAIL_RE = re.compile(r'^[\S]+@[\S\+\.[\S]+$')
+EMAIL_RE = re.compile(r'^[\S]+@[\S]+\.[\S]+$')
 def valid_email(email):
     return not email or EMAIL_RE.match(email) 
 
